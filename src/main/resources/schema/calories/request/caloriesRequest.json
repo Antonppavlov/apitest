@@ -1,0 +1,62 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "activity": {
+      "$id": "/properties/activity",
+      "type": "integer",
+      "title": "The Activity Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "age": {
+      "$id": "/properties/age",
+      "type": "integer",
+      "title": "The Age Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "gender": {
+      "$id": "/properties/gender",
+      "type": "boolean",
+      "title": "The Gender Schema ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "height": {
+      "$id": "/properties/height",
+      "type": "integer",
+      "title": "The Height Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "target": {
+      "$id": "/properties/target",
+      "type": "integer",
+      "title": "The Target Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "weight": {
+      "$id": "/properties/weight",
+      "type": "integer",
+      "title": "The Weight Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    }
+  }
+}
