@@ -120,24 +120,6 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>${jsonschema2pojo.version}</version>
-                <configuration>
-                    <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
-                    <outputDirectory>${basedir}/src/main/java</outputDirectory>
-                    <targetPackage>ru.appavlov.apitest.pojo</targetPackage>
-                    <generateBuilders>true</generateBuilders>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 
         </plugins>
     </build>
