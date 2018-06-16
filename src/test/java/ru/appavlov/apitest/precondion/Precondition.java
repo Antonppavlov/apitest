@@ -3,6 +3,7 @@ package ru.appavlov.apitest.precondion;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
+import ru.appavlov.apitest.Log4jRestAssuredFilter;
 
 public class Precondition {
 
@@ -12,7 +13,8 @@ public class Precondition {
     public void beforeClass() {
         if (!enable) {
             RestAssured.filters(
-                    new AllureRestAssured()
+                    new AllureRestAssured(),
+                    new Log4jRestAssuredFilter()
             );
             enable = true;
         }
